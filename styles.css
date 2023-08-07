@@ -1,0 +1,145 @@
+body {
+    background-color: #e7e5e5;
+}
+
+::placeholder{
+    padding: 10px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+h3 {
+    margin-left: 30px;
+}
+
+.myStyle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+}
+
+.input-default,
+.input-correct,
+.input-incorrect,
+.checkbox-enabled,
+.checkbox-disabled,
+.radio-enabled,
+.radio-disabled,
+.btn-default,
+.btn-hover,
+.btn-disabled,
+.btn-icon-default,
+.btn-icon-hover,
+.textarea-default {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.input-default,
+.input-correct,
+.input-incorrect,
+.textarea-default {
+    position: relative; 
+    padding-right: 30px; 
+    background-repeat: no-repeat;
+    background-position: right center; 
+    background-size: 20px; 
+    height: 30px;
+}
+
+.input-correct {
+    border-color: green;
+    background-image: url('img/valid.png');
+}
+
+.input-incorrect {
+    border-color: red;
+    background-image: url('img/invalid.png');
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.checkbox-input:checked + .custom-checkbox {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.custom-checkbox img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.checkbox-enabled,
+.checkbox-disabled,
+.radio-enabled,
+.radio-disabled {
+    margin-right: 5px;
+}
+
+.checkbox-disabled,
+.radio-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.radio-label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-default,
+.btn-hover,
+.btn-disabled,
+.btn-icon-default,
+.btn-icon-hover {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-hover:hover,
+.btn-icon-hover:hover {
+    background-color: #0056b3;
+}
+
+.btn-disabled {
+    background-color: #ccc;
+    color: #888;
+    cursor: not-allowed;
+}
+
+.textarea-default {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 50%;
+    height: 100px;
+    resize: vertical;
+}

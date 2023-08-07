@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Input Styles Library</title>
+</head>
+<body>
+    <div class="input-container">
+        <h3>Inputs</h3>
+        <div class="myStyle">
+            <input type="text" class="input-default" placeholder="Input Default">
+            <input type="text" class="input-correct" placeholder="Input Correct">
+            <input type="text" class="input-incorrect" placeholder="Input Incorrect">
+        </div>
+        <h3>CheckBox</h3>
+        <div class="myStyle">
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-enabled">
+                <span class="custom-checkbox"></span>
+                Subscribe
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-disabled" disabled>
+                <span class="custom-checkbox"></span>
+                Subscribe
+            </label>
+        </div>
+        <h3>Radio Buttons</h3>
+        <div class="myStyle">
+            <p>Gender:</p>
+            <label class="radio-label">
+                <input type="radio" class="radio-enabled">
+                Male
+            </label>
+            <label class="radio-label">
+                <input type="radio" class="radio-disabled" disabled>
+                Female
+            </label>
+        </div>
+        <h3>Buttons</h3>
+        <div class="myStyle">
+            <button class="btn-default">Button Default</button>
+            <button class="btn-hover">Button Hover</button>
+            <button class="btn-disabled" disabled>Button Disabled</button>
+            <button class="btn-icon-default"><span><img src="img/valid.png" alt="png"></span></button>
+            <button class="btn-icon-hover"><span><img src="img/invalid.png" alt="png"></span></button>
+        </div>
+        <h3>Textarea</h3>
+        <textarea class="textarea-default" placeholder="Textarea Default"></textarea>
+    </div>
+</body>
+</html>
